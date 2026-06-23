@@ -1,0 +1,54 @@
+
+/*ページ全体のデザイン*/
+body{
+    background-color: #ffeeee;
+    color: #333333;
+    font-family: sans-serif; /*ゴシック体*/
+    line-height: 1.6; /*行間*/
+    padding: 20px;    /*画面の端に余白*/
+}
+
+/*見出しのデザイン <h1>*/
+h1{
+    color: #d35400;
+    font-size: 24px;
+    border-bottom: 2px solid #d35400; /*アンダーライン*/
+    padding-bottom: 5px;
+    margin-top: 40px; /*上のコンテンツとの間隔をあける*/
+}
+
+/*
+定義リストのデザイン（dl, dt, dd）
+★ここが今回のポイント！横並びにする設定です
+*/
+
+dt{
+    float: left; /* 項目名（title: など）を左に回り込ませる */
+    clear: left; /* 次の行が前の行に巻き込まれないようにリセット */
+    font-weight: bold;
+    color: #2c3e50;
+    width: 130px;
+}
+
+dd{
+    margin-left: 140px;
+    margin-bottom: 15px;
+}
+
+/*PDF埋め込みエリアのデザイン*/
+/*1.PDFを画面の真ん中に寄せる*/
+.pdf-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/*2.PDF自体のサイズ設定*/
+.pdf-container{
+    width: 100%; /* 横幅いっぱいに広げる */
+    max-width: 800px; /* パソコンで見ても広がりすぎないように最大幅を制限 */
+    height: 600px;
+    border: 1px solid #ccc;
+}
+
